@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <p>SlideShow Daniel</p>
+	<div class="owl-carousel owl-theme">
+		<div><img src="https://i.postimg.cc/nCWz2skd/390077b6-e0ef-4b23-b251-141fba69ffe3.jpg" width="330" height="220"></div>
+		<div><img src="https://i.postimg.cc/CZGxwcVt/882aa95c-8e23-41f2-9483-f1cecde99a0a.jpg" width="330" height="220"></div>
+		<div><img src="https://i.postimg.cc/CBwL5bhK/916b5ef1-43fb-4f11-95dc-2c1d7c11b60d.jpg" width="330" height="220"></div>
+		<div><img src="https://i.postimg.cc/bGcvXK4k/becef4ab-ae33-4e3b-bb37-58d1b44e87be.jpg" width="330" height="220"></div>
+		<div><img src="https://i.postimg.cc/MMtZQXHm/caad48a7-a339-4708-921c-cdf637a3ec01.jpg" width="330" height="220"></div>
+		<div><img src="https://i.postimg.cc/VJbNVYZz/d815eaba-aef3-40e0-976b-b0c4fba90df5.jpg" width="330" height="220"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			autoplay:true,
+			autoplayTimeout:900,
+			autoplayHoverPause:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:4
+				}
+			}
+		})
+	</script>
+</body>
+</html>
